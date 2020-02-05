@@ -1,0 +1,42 @@
+{
+  "name": "ic-num-conv",
+  "version": "1.0.0",
+  "description": "Arabic digital converter",
+  "main": "dist/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc:dev": "tsc -W -P ./tsconfig.json",
+    "build": "tsc -P ./tsconfig.json && gulp build",
+    "clear:dist": "gulp clearDist",
+    "publish": "npm run clear:dist && npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaaxite/num-conv.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "number",
+    "converter",
+    "typescript"
+  ],
+  "author": "isaac_宝华",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isaaxite/num-conv/issues"
+  },
+  "homepage": "https://github.com/isaaxite/num-conv#readme",
+  "devDependencies": {
+    "@types/lodash": "^4.14.149",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-cli": "^2.2.0",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
